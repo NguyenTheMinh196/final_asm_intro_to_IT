@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team profile</title>
+    <link rel = "stylesheet" href = "style\style.css">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+
+  <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Group-website">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+      <div style = "background-color : #E6E6EA", class = "container-fluid"> <!--start of the body-->
+        <div class = "row">
+          <div style = "text-align : left; border: solid 1px black " class = "col" id = "team_profile">
+            <h1> Group name </h1> 
+          </div>
+          <p>Name: <input type="text" id="myText" value="Mickey"></p>
+          <div style = "text-align: right; border : solid 1px black " class = "col">
+          Hello <p id = "user" value = "name"> </p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "menu col"> <!--menu-->
+              <ul>   
+                <li><a href = "team_profile">Team profile </a> 
+                    <ul class = "submenu">
+                        <li><a href = "index.html#team_name">Team name </a> </li>
+                        <li><a href = "index.html#Personal_information">Personal information</a> </li>
+                        <li><a href = "index.html#Group_Processes">Group Processes</a> </li>
+                        <li><a href = "index.html#Career_Plans">Career Plans</a> </li>
+                    </ul>    
+                </li>
+                <li><a href = "#">Tools </a> 
+                    <ul class = "submenu">
+                        <li><a href = "index.html#team_name">Team name </a> </li>
+                        <li><a href = "index.html#my_test_result">My test result</a> </li>
+                        <li><a href = "index.html#team_profile">Team profile </a> </li>
+                    </ul>    
+                </li>
+                <li><a href = "#">Skill and jobs</a> 
+                    <ul class = "submenu">
+                        <li><a href = "index.html#team_name">Team name </a> </li>
+                        <li><a href = "index.html#my_test_result">My test result</a> </li>
+                        <li><a href = "index.html#team_profile">Team profile </a> </li>
+                    </ul>    
+                </li>
+                <li><a href = "#">Feedback </a> 
+                    <ul class = "submenu">
+                        <li><a href = "index.html#team_name">Team name </a> </li>
+                        <li><a href = "index.html#my_test_result">My test result</a> </li>
+                        <li><a href = "index.html#team_profile">Team profile </a> </li>
+                    </ul>    
+                </li>
+                <li><a href = "#">Group Reflection </a> 
+                    <ul class = "submenu">
+                        <li><a href = "index.html#team_name">Team name </a> </li>
+                        <li><a href = "index.html#my_test_result">My test result</a> </li>
+                        <li><a href = "index.html#team_profile">Team profile </a> </li>
+                    </ul>    
+                </li>
+              </ul>
+          </div>
+
+        </div> 
+        
+        <div class = "row justify-content-end" style = "margin-top: 25px"> <!--the black box in the left-->
+          <div class = "col" style = "border: #333 solid 5px">
+            <p> content</p>
+          </div>
+          <div class = "col-8">
+            <div class = "container-fluid">
+              <div style = "text-align:center" id = "team_name"> <!-- The main content-->
+                <h3> Team name </h3>
+                <div class = "information_block">
+                <p> information here
+                </div>
+              </div>
+              <h1 style = "text-align: center"> Personal information </h1>
+              <div class = "row" id = "Personal_information">
+                <div class = "col" style= "text-align: right">
+                  <div class = "container-fluid">
+                    <div class = "row">
+                    
+                      <div class = "col-8">
+                        <h1 id = "Person_name" style = "text-align: center"> </h1>
+                        <p id = "personal_description" style = "text-align: left"> one two three four five </p>
+                      </div>
+                      <div class = "col-4" style = "text-align: right">
+                        <div class = "social_media_account_frames"  style="left: 100px">
+                          <a href = "#" onclick = "changeimage(1)">
+                          <img class ="social_media_account" src = "image\team_profile\khanh_linh.jpg">
+                          </a>
+                        </div >
+                        <br>
+                        <div class = "social_media_account_frames"  style="left: 100px">
+                          <a href = "#" onclick = "changeimage(5)">
+                          <img class ="social_media_account" src = "image\team_profile\bui_nguyen_ngoc_tuan.jpg">
+                          </a>
+                        </div >
+                        <br>
+                        <div class = "social_media_account_frames"  style="left: 100px">
+                          <a href = "#" onclick = "changeimage(2)">
+                          <img class ="social_media_account" src = "image\team_profile\nguyen_phuong_nam.jpg"> 
+                          </a>
+                        </div >
+                        <br>
+                        <div class = "social_media_account_frames"  style="left: 100px">
+                          <a href = "#" onclick = "changeimage(3)">
+                          <img class ="social_media_account" src = "image\team_profile\nguyen_the_minh.jpg"> 
+                          </a>
+                        </div >
+                        <br>
+                        <div class = "social_media_account_frames"  style="left: 100px">
+                          <a href = "#" onclick = "changeimage(4)">
+                          <img class ="social_media_account" src = "image\team_profile\vo_khai_minh.jpg"> </a>
+                          </div >
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class = "col" style = "text-align: left">
+                  <div class =  "picture_for_transition_container" style = "position = relative">
+                    <div class = "picture_container" style = "position: relative; z-index: 2" id = "picture_container">
+                      <img  src = "image/team_profile/nguyen_the_minh.jpg" id = "info" style = "height: 350px; position: absolute; z-index : 1" onload = "change_image_every_3sec()">
+                    </div>
+                    <div id = "icon">
+                      <div class = "social_media_account_frames"  style="left: 0px; display: block; position: relative; z-index: 1">
+                        <a href = "#" target = "_blank" id = "facebook">
+                        <img class ="social_media_account" src = "image\team_profile\facebook.png">
+                        </a>
+                      </div>
+                      <div class = "social_media_account_frames"  style="left: 0px; display: block; position: relative; z-index: 1">
+                        <a href = "#" target = "_blank" id = "twitter" >
+                        <img class ="social_media_account" src = "image\team_profile\twitter.jpg">
+                        </a>
+                      </div >
+                      <div class = "social_media_account_frames"  style="left: 0px; display: block; position: relative; z-index: 1">
+                        <a href = "#" target = "_blank" id = "insta">
+                        <img class ="social_media_account" src = "image\team_profile\instagram.png">
+                        </a>
+                      </div >
+                      <div class = "social_media_account_frames"  style="left: 0px; display: block; position: relative; z-index: 1">
+                        <a href = "#" target = "_blank" id = "github">
+                        <img class ="social_media_account" src = "image\team_profile\GitHub-Mark.png">
+                        </a>
+                      </div >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=  "seperator"> </div>
+            <div style = "text-align:center; margin:15px" id = "Group_Processes">
+              <h3> Group process </h3>
+              <div class = "information_block">
+              <p> information here
+              </div>
+            </div>
+          <div class = "seperator"> </div>
+          <div style = "text-align:center; margin:15px" id = "Career_Plans">
+              <h3> Career Plans </h3>
+              <div class = "information_block">
+              <p> information here
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class = "col-2"> <!-- stickybox-->
+          <div class = "sticky_block" style = "margin: 5px">
+            <h1> one two three </p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      <p id = "testing123"> </p>
+    </header>
+    <middle>
+    </middle>
+    <footer>
+    
+    </footer>
+    
+</body>
+<script  async defer src ="js/javaScript.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+
+</html>

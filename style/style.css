@@ -1,0 +1,130 @@
+.active {
+    display: block;
+}
+
+.menu {
+    display: block;
+    text-align: center;
+    background-color: #D7F171;
+}
+
+.menu ul {
+    list-style-type: none;
+    background-color: #D7F171;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu ul li {
+    text-align: center;
+    display: inline-table;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(176, 175, 255);
+    color: #333;
+}
+
+.menu ul li>.submenu {
+    display: none;
+    position: absolute;
+}
+
+.menu ul li:hover .submenu {
+    display: block;
+    z-index: +1;
+}
+
+.submenu ul li {
+    display: block;
+    text-align: center;
+}
+
+.sticky_block {
+    border: black 2px solid;
+    width: 100%;
+    height: relative;
+    position: sticky;
+    display: block;
+    top: 0px;
+    max-height: 750px;
+    overflow: auto;
+}
+
+.social_media_account_frames {
+    border: solid #5299D3 1px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px
+}
+
+.social_media_account {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.picture_for_transition_container {
+    width: fit-content;
+    max-height: 300px;
+    border: #333 1px solid;
+}
+
+.information_block {
+    background-color: white;
+    padding: 20px;
+}
+
+.seperator {
+    width: 60px;
+    height: 3px;
+    background-color: #a43f49;
+    margin: 10px auto;
+}
+
+.block_hover {
+    background: #F8F8F8;
+    border: 5px solid #DFDFDF;
+    color: #717171;
+    font-size: 13px;
+    height: fit-content;
+    width: fit-content;
+    letter-spacing: 1px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: -70px;
+    left: -30px;
+    display: none;
+    padding: 0 20px;
+    max-width: 400px;
+}
+
+.block_hover::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid #333333;
+    border-right: 5px solid #333;
+    background: #f8f8f8;
+    margin-left: -10px;
+    left: 15%;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
